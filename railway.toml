@@ -1,9 +1,9 @@
 [build]
   builder = "NIXPACKS"
-  buildCommand = "npm install -g pnpm@9 && cd artifacts/api-server && pnpm install && node ./build.mjs"
+  buildCommand = "npm install"
 
   [deploy]
-  startCommand = "node --enable-source-maps artifacts/api-server/dist/index.mjs"
+  startCommand = "npx tsx artifacts/api-server/src/index.ts"
   restartPolicyType = "ON_FAILURE"
   restartPolicyMaxRetries = 10
   
