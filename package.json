@@ -4,7 +4,7 @@
     "private": true,
     "type": "module",
     "scripts": {
-      "start": "tsx src/index.ts"
+      "start": "tsx artifacts/api-server/src/index.ts"
     },
     "dependencies": {
       "cookie-parser": "^1.4.7",
@@ -12,15 +12,13 @@
       "discord.js": "^14.16.3",
       "express": "^4.21.2",
       "pino": "^9.6.0",
-      "pino-http": "^10.5.0"
-    },
-    "devDependencies": {
+      "pino-http": "^10.5.0",
+      "tsx": "^4.19.2",
+      "typescript": "^5.0.0",
       "@types/cookie-parser": "^1.4.10",
       "@types/cors": "^2.8.19",
       "@types/express": "^4.17.21",
-      "@types/node": "^20.0.0",
-      "tsx": "^4.19.2",
-      "typescript": "^5.0.0"
+      "@types/node": "^20.0.0"
     }
   }
   
